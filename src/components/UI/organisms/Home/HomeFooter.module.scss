@@ -1,0 +1,51 @@
+@import '../../../../assets/scss/variables';
+
+.footer {
+  background: #1E1F31;
+  padding: 32px;  
+}
+
+.uploadFileWrapper {
+  width: 100%;
+  padding: 80px 0;
+  border: 3px dashed #55566B;
+  transition: 0.25s;
+
+  &:hover {
+    border-color: #7d7fa1;
+  }
+}
+
+.iconWrapper {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  margin: 0 auto 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $gradientDark;
+}
+
+.icon {
+  position: relative;
+  top: 3px;
+  left: 2px;
+}
+
+.buttonWrapper {
+  font-size: 24px;
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+}
+
+.button {
+  padding: 10px 20px;
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.3);
+  border-radius: 24px;
+  background: $blue;
+  cursor: pointer;
+  display: inline-block;
+  margin-right: 10px;
+}

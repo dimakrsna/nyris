@@ -1,0 +1,15 @@
+@import '../../../assets/scss/variables';
+
+.topbarWrapper {
+  background: $blue;
+  width: 100%;
+}
+
+.logoWrapper {
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  min-height: 48px;
+  padding: 0 28px;
+  background: #322BB0;
+}

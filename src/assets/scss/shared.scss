@@ -1,0 +1,11 @@
+@import './variables.scss';
+
+// ----------- COMMON ----------- //
+.center {
+  text-align: center;
+}
+
+.disabled {
+  cursor: default !important;
+  opacity: 0.4;
+}

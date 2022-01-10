@@ -1,0 +1,19 @@
+// COLORS
+$blue: #3E36DC;
+$dark: #55566B;
+$lightGray: #F3F3F5;
+
+// BORDER-RADIUS
+$borderRadius: 32px;
+
+// OTHER
+$shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+
+$gradientLight: linear-gradient(180deg, #FAFAFA 0%, #E9E9EC 100%);
+$gradientLightHover: linear-gradient(180deg, #AAABB5 0%, #55566B 100%);
+$gradientDark: linear-gradient(180deg, #56577C 0%, #2B2C46 100%);
+
+// MEDIA BREAKPOINTS
+$breakpointLaptop: 1329px;
+$breakpointTablet: 1023px;
+$breakpointPhone: 767px;

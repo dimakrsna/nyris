@@ -1,0 +1,1 @@
+export const signInSelector = ({ signIn }) => signIn;
