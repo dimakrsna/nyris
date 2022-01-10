@@ -3,6 +3,11 @@
 .footer {
   background: #1E1F31;
   padding: 32px;  
+
+  @media only screen and (max-width: $breakpointDasktop){
+    padding: 14px;
+    margin-top: auto;
+  }
 }
 
 .uploadFileWrapper {
@@ -13,6 +18,11 @@
 
   &:hover {
     border-color: #7d7fa1;
+  }
+
+  @media only screen and (max-width: $breakpointDasktop){
+    border: 2px dashed #55566B;
+    padding: 70px 0;
   }
 }
 
@@ -25,12 +35,22 @@
   align-items: center;
   justify-content: center;
   background: $gradientDark;
+
+  @media only screen and (max-width: $breakpointDasktop){
+    width: 66px;
+    height: 66px;
+    margin-bottom: 30px;
+  }
 }
 
 .icon {
   position: relative;
   top: 3px;
   left: 2px;
+
+  @media only screen and (max-width: $breakpointDasktop) {
+    transform: scale(0.7);
+  }
 }
 
 .buttonWrapper {
@@ -38,6 +58,11 @@
   color: #fff;
   font-weight: 700;
   text-align: center;
+
+  @media only screen and (max-width: $breakpointDasktop) {
+    font-size: 16px;
+    font-weight: 600;
+  }
 }
 
 .button {

@@ -1,0 +1,10 @@
+@import '../assets/scss/variables';
+
+.homeWrapper {
+  @media only screen and (max-width: $breakpointDasktop) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: calc(100vh - 32px);
+  }
+}

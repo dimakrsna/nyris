@@ -4,6 +4,7 @@
   width: 100%;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   border-radius: $borderRadius;
   box-shadow: $shadow;
 }
@@ -12,14 +13,21 @@
   border: none;
   outline: none;
   background: transparent;
-  height: 64px;
   width: calc(100% - 60px);
+  height: 64px;
   font-size: 24px;
   font-weight: 400;
   padding-left: 24px;
 
   &::placeholder {
     color: $dark
+  }
+
+  @media only screen and (max-width: $breakpointDasktop){
+    width: calc(100% - 60px);
+    height: 42px;
+    font-size: 17px;
+    padding-left: 16px;
   }
 }
 
@@ -32,4 +40,11 @@
   justify-content: center;
   background: $lightGray;
   cursor: pointer;
+  margin-right: 10px;
+
+  @media only screen and (max-width: $breakpointDasktop) {
+    width: 36px;
+    height: 36px;
+    margin-right: 6px;
+  }
 }

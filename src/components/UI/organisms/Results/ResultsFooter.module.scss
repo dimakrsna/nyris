@@ -13,6 +13,10 @@
   justify-content: space-between;
   font-weight: 400;
   font-size: 12px;
+
+  @media only screen and (max-width: $breakpointDasktop) {
+    height: 36px;
+  }
 }
 
 .amount {
@@ -21,6 +25,10 @@
   display: flex;
   align-items: center;
   border-right: 2px solid #E9E9EC;
+
+  @media only screen and (max-width: $breakpointDasktop) {
+    height: 36px;
+  }
 }
 
 .tt {
@@ -30,6 +38,11 @@
   align-items: center;
   justify-content: center;
   border-left: 2px solid #E9E9EC;
+
+  @media only screen and (max-width: $breakpointDasktop) {
+    height: 36px;
+    width: 36px;
+  }
 }
 
 .link {

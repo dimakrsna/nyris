@@ -2,6 +2,10 @@
 
 .searchWrapper {
   padding: 95px 0 180px;
+
+  @media only screen and (max-width: $breakpointDasktop){
+    padding-bottom: 100px;
+  }
 }
 
 .iconWrapper {
@@ -13,17 +17,31 @@
   align-items: center;
   justify-content: center;
   background: $gradientLight;
+
+  @media only screen and (max-width: $breakpointDasktop){
+    width: 66px;
+    height: 66px;
+    margin-bottom: 30px;
+  }
 }
 
 .icon {
   position: relative;
   top: 3px;
+
+  @media only screen and (max-width: $breakpointDasktop) {
+    transform: scale(0.8);
+  }
 }
 
 .searchFormWrapper {
   width: 100%;
   max-width: 960px;
   margin: 0 auto;
+
+  @media only screen and (max-width: $breakpointDasktop){
+    max-width: 600px;
+  }
 }
 
 .note {
@@ -31,4 +49,9 @@
   color: $dark;
   font-weight: 600;
   text-align: center;
+
+  @media only screen and (max-width: $breakpointDasktop){
+    margin-top: 30px;
+    font-size: 14px;
+  }
 }
