@@ -9,7 +9,7 @@ export const Spinner = ({ color }: Props) => (
   <div className={styles.spinnerWrapper}>
     <Loader
       type="Oval"
-      color={color || "#fff"}
+      color={color || "#3E36DC"}
       height={35}
       width={35}
     />

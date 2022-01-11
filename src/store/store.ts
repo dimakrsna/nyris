@@ -2,10 +2,10 @@ import { applyMiddleware, combineReducers, createStore, compose } from 'redux'
 import { composeWithDevTools } from 'redux-devtools-extension'
 import createSagaMiddleware from 'redux-saga'
 import rootSaga from './sagas'
-import signIn from './signIn/reducer'
+import search from './search/reducer'
 
 const appReducer = combineReducers({
-	signIn,
+	search,
 })
 
 const rootReducer = (businessState, action) => {

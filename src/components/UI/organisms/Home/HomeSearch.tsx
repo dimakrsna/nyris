@@ -4,14 +4,27 @@ import icon from '../../../../assets/svg/icon-search.svg'
 import styles from './HomeSearch.module.scss'
 import { InputSearch } from '../../atoms/InputSearch'
 import { history } from '../../../../App'
+import { useDispatch, useSelector } from 'react-redux'
+import Actions from '../../../../store/actions'
+import { searchSelector } from '../../../../store/selectors'
 
 export const HomeSearch = () => {
-  const [value, onValueChange] = useState<string>('')
+  const searchStore = useSelector(searchSelector)
+  const [value, onValueChange] = useState<string>(searchStore?.searchValue)
+  const dispatch = useDispatch()
 
   const onSearch = () => {
-    history.push('/results')
+    if (value) {
+      dispatch(Actions.search.getSearchRequest(value))
+      history.push('/results')
+    }
   }
-  
+
+  const onClear = () => {
+    dispatch(Actions.search.getSearchSuccess([]))
+    onValueChange('')
+  }
+
   return (
     <div className={styles.searchWrapper}>
       <div className={styles.iconWrapper}>
@@ -21,7 +34,7 @@ export const HomeSearch = () => {
         <InputSearch
           value={value}
           onInputChange={(event) => { onValueChange(event.target.value) }}
-          onClear={() => onValueChange('')}
+          onClear={onClear}
           onSubmit={onSearch}
         />
       </div>

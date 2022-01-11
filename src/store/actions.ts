@@ -1,5 +1,5 @@
-import signIn from './signIn/actions'
+import search from './search/actions'
 
 export default {
-  signIn,
+  search,
 }

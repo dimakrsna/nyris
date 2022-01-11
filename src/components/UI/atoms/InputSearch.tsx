@@ -7,14 +7,14 @@ interface Props {
   value?: string
   onInputChange?: (event: ChangeEvent<HTMLInputElement>) => void
   onClear?: () => void
-  onSubmit?: () => void
+  onSubmit?: (event) => void
 }
 
 export const InputSearch = ({ value, onInputChange, onClear, onSubmit }: Props) => {
 
   const onFormSubmit = (event) => {
     event.preventDefault()
-    onSubmit && onSubmit()
+    onSubmit && onSubmit(event)
   }
 
   return (

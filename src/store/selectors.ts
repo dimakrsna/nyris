@@ -1,1 +1,1 @@
-export const signInSelector = ({ signIn }) => signIn;
+export const searchSelector = ({ search }) => search;
