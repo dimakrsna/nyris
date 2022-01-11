@@ -19,8 +19,10 @@ const getSearchError = () => ({
   type: ActionTypes.GET_SEARCH_ERROR
 })
 
-export default {
+const actions = {
   getSearchRequest,
   getSearchSuccess,
   getSearchError,
 };
+
+export default actions

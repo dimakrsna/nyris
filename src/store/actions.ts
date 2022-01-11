@@ -1,5 +1,7 @@
 import search from './search/actions'
 
-export default {
+const actions = {
   search,
 }
+
+export default actions

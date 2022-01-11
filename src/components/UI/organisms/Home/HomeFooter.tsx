@@ -1,4 +1,4 @@
-import { useState, ChangeEvent } from "react"
+import { useState, ChangeEvent, useEffect } from "react"
 import { ReactSVG } from 'react-svg'
 import styles from "./HomeFooter.module.scss"
 import Dropzone from 'react-dropzone'
@@ -19,6 +19,12 @@ export const HomeFooter = () => {
       setFile(uploadedFile[0])
     }
   };
+
+  useEffect(()=>{
+    if(file){
+      console.log(file)
+    }
+  },[file])
 
   return (
     <footer className={styles.footer}>
